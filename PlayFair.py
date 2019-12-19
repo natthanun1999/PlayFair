@@ -19,10 +19,10 @@ def CleanText():
     global secret_key, plain_text, characters
 
     # Make to Upper Characters and remove Empty Space
-    secret_key = secret_key.strip()
+    secret_key = secret_key.replace(" ", "")
     secret_key = secret_key.upper()
 
-    plain_text = plain_text.strip()
+    plain_text = plain_text.replace(" ", "")
     plain_text = plain_text.upper()
 
     # Check Duplicate Characters
